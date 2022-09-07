@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<link rel="shortcut icon" type="image/png" href="./images/Screenshot_2.png"/>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+		<title>HomeStudy</title>
+	</head>
+	<body>
+        <header><img id="logo" alt="logo" src="./images/output-onlinepngtools_1.png"></header>
+        <a href="#logo"><img id="back-to-top" alt="back-to-top" src="./images/top.jpg"></a>
+        <aside id="menu">
+            <nav>
+                <a href="./index.html">Αρχική</a>
+                <a href="./topics.html">Θεματικές Περιοχές</a>
+                <a href="./aboutUs.html">Ποιοι Είμαστε</a>
+                <a href="./contact.html">Επικοινωνία</a>
+                <a href="#">Εγγραφή</a>
+            </nav>
+        </aside>
+        <main>
+        	<article>
+        		<h1>Εγγραφή</h1>
+                <p>Συμπληρώστε όλα τα πεδία με λατινικούς χαρακτήρες. Συμπληρώστε υποχρεωτικά όλα τα κόκκινα πεδία. Θα γίνουν πράσινα όταν
+                η είσοδος είναι σωστή.</p>
+                <form id="signUp-form" autocomplete="on" onsubmit="successfulSubmit()">
+                    <fieldset>
+                        <legend>Προσωπικά Στοιχεία</legend>
+                        <div class="personal">
+                            <label for="name" id="label-name">Όνομα</label>
+                            <input type="text" id="name" class="must" placeholder="Enter your name" pattern="[A-Za-z]{2,}" required autofocus/>
+                            <label for="lastname" id="label-lastname">Επώνυμο</label>
+                            <input type="text" id="lastname" class="must" placeholder="Enter your last name" pattern="[A-Za-z]{2,}" required/>
+                            <label for="email" id="label-email">Email</label>
+                            <input type="email" id="email" class="must" placeholder="Enter your email e.g. example@gmail.com" required/>
+                            <label for="birthday" id="label-birthday">Ημερομηνία Γέννησης</label>
+                            <input type="date" id="birthday" class="must" required/>
+                            <label for="birthday" id="label-country">Χώρα και Τηλεφωνικός Κωδικός</label>
+                            <input list="countries" id="country" class="must" name="country" placeholder="Country" autocomplete="on" required>
+                            <datalist id="countries">
+                                <option>Algeria (+213)</option>
+                                <option>Andorra (+376)</option>
+                                <option>Angola (+244)</option>
+                                <option>Anguilla (+1264)</option>
+                                <option>Antigua & Barbuda (+1268)</option>
+                                <option>Argentina (+54)</option>
+                                <option>Armenia (+374)</option>
+                                <option>Aruba (+297)</option>
+                                <option>Australia (+61)</option>
+                                <option>Austria (+43)</option>
+                                <option>Azerbaijan (+994)</option>
+                                <option>Bahamas (+1242)</option>
+                                <option>Bahrain (+973)</option>
+                                <option>Bangladesh (+880)</option>
+                                <option>Barbados (+1246)</option>
+                                <option>Belarus (+375)</option>
+                                <option>Belgium (+32)</option>
+                                <option>Belize (+501)</option>
+                                <option>Benin (+229)</option>
+                                <option>Bermuda (+1441)</option>
+                                <option>Bhutan (+975)</option>
+                                <option>Bolivia (+591)</option>
+                                <option>Bosnia Herzegovina (+387)</option>
+                                <option>Botswana (+267)</option>
+                                <option>Brazil (+55)</option>
+                                <option>Brunei (+673)</option>
+                                <option>Bulgaria (+359)</option>
+                                <option>Burkina Faso (+226)</option>
+                                <option>Burundi (+257)</option>
+                                <option>Cambodia (+855)</option>
+                                <option>Cameroon (+237)</option>
+                                <option>Canada (+1)</option>
+                                <option>Cape Verde Islands (+238)</option>
+                                <option>Cayman Islands (+1345)</option>
+                                <option>Central African Republic (+236)</option>
+                                <option>Chile (+56)</option>
+                                <option>China (+86)</option>
+                                <option>Colombia (+57)</option>
+                                <option>Comoros (+269)</option>
+                                <option>Congo (+242)</option>
+                                <option>Cook Islands (+682)</option>
+                                <option>Costa Rica (+506)</option>
+                                <option>Croatia (+385)</option>
+                                <option>Cuba (+53)</option>
+                                <option>Cyprus North (+90392)</option>
+                                <option>Cyprus South (+357)</option>
+                                <option>Czech Republic (+42)</option>
+                                <option>Denmark (+45)</option>
+                                <option>Djibouti (+253)</option>
+                                <option>Dominica (+1809)</option>
+                                <option>Dominican Republic (+1809)</option>
+                                <option>Ecuador (+593)</option>
+                                <option>Egypt (+20)</option>
+                                <option>El Salvador (+503)</option>
+                                <option>Equatorial Guinea (+240)</option>
+                                <option>Eritrea (+291)</option>
+                                <option>Estonia (+372)</option>
+                                <option>Ethiopia (+251)</option>
+                                <option>Falkland Islands (+500)</option>
+                                <option>Faroe Islands (+298)</option>
+                                <option>Fiji (+679)</option>
+                                <option>Finland (+358)</option>
+                                <option>France (+33)</option>
+                                <option>French Guiana (+594)</option>
+                                <option>French Polynesia (+689)</option>
+                                <option>Gabon (+241)</option>
+                                <option>Gambia (+220)</option>
+                                <option>Georgia (+7880)</option>
+                                <option>Germany (+49)</option>
+                                <option>Ghana (+233)</option>
+                                <option>Gibraltar (+350)</option>
+                                <option>Greece (+30)</option>
+                                <option>Greenland (+299)</option>
+                                <option>Grenada (+1473)</option>
+                                <option>Guadeloupe (+590)</option>
+                                <option>Guam (+671)</option>
+                                <option>Guatemala (+502)</option>
+                                <option>Guinea (+224)</option>
+                                <option>Guinea - Bissau (+245)</option>
+                                <option>Guyana (+592)</option>
+                                <option>Haiti (+509)</option>
+                                <option>Honduras (+504)</option>
+                                <option>Hong Kong (+852)</option>
+                                <option>Hungary (+36)</option>
+                                <option>Iceland (+354)</option>
+                                <option>India (+91)</option>
+                                <option>Indonesia (+62)</option>
+                                <option>Iran (+98)</option>
+                                <option>Iraq (+964)</option>
+                                <option>Ireland (+353)</option>
+                                <option>Israel (+972)</option>
+                                <option>Italy (+39)</option>
+                                <option>Jamaica (+1876)</option>
+                                <option>Japan (+81)</option>
+                                <option>Jordan (+962)</option>
+                                <option>Kazakhstan (+7)</option>
+                                <option>Kenya (+254)</option>
+                                <option>Kiribati (+686)</option>
+                                <option>Korea North (+850)</option>
+                                <option>Korea South (+82)</option>
+                                <option>Kuwait (+965)</option>
+                                <option>Kyrgyzstan (+996)</option>
+                                <option>Laos (+856)</option>
+                                <option>Latvia (+371)</option>
+                                <option>Lebanon (+961)</option>
+                                <option>Lesotho (+266)</option>
+                                <option>Liberia (+231)</option>
+                                <option>Libya (+218)</option>
+                                <option>Liechtenstein (+417)</option>
+                                <option>Lithuania (+370)</option>
+                                <option>Luxembourg (+352)</option>
+                                <option>Macao (+853)</option>
+                                <option>Macedonia (+389)</option>
+                                <option>Madagascar (+261)</option>
+                                <option>Malawi (+265)</option>
+                                <option>Malaysia (+60)</option>
+                                <option>Maldives (+960)</option>
+                                <option>Mali (+223)</option>
+                                <option>Malta (+356)</option>
+                                <option>Marshall Islands (+692)</option>
+                                <option>Martinique (+596)</option>
+                                <option>Mauritania (+222)</option>
+                                <option>Mayotte (+269)</option>
+                                <option>Mexico (+52)</option>
+                                <option>Micronesia (+691)</option>
+                                <option>Moldova (+373)</option>
+                                <option>Monaco (+377)</option>
+                                <option>Mongolia (+976)</option>
+                                <option>Montserrat (+1664)</option>
+                                <option>Morocco (+212)</option>
+                                <option>Mozambique (+258)</option>
+                                <option>Myanmar (+95)</option>
+                                <option>Namibia (+264)</option>
+                                <option>Nauru (+674)</option>
+                                <option>Nepal (+977)</option>
+                                <option>Netherlands (+31)</option>
+                                <option>New Caledonia (+687)</option>
+                                <option>New Zealand (+64)</option>
+                                <option>Nicaragua (+505)</option>
+                                <option>Niger (+227)</option>
+                                <option>Nigeria (+234)</option>
+                                <option>Niue (+683)</option>
+                                <option>Norfolk Islands (+672)</option>
+                                <option>Northern Marianas (+670)</option>
+                                <option>Norway (+47)</option>
+                                <option>Oman (+968)</option>
+                                <option>Palau (+680)</option>
+                                <option>Panama (+507)</option>
+                                <option>Papua New Guinea (+675)</option>
+                                <option>Paraguay (+595)</option>
+                                <option>Peru (+51)</option>
+                                <option>Philippines (+63)</option>
+                                <option>Poland (+48)</option>
+                                <option>Portugal (+351)</option>
+                                <option>Puerto Rico (+1787)</option>
+                                <option>Qatar (+974)</option>
+                                <option>Reunion (+262)</option>
+                                <option>Romania (+40)</option>
+                                <option>Russia (+7)</option>
+                                <option>Rwanda (+250)</option>
+                                <option>San Marino (+378)</option>
+                                <option>Sao Tome & Principe (+239)</option>
+                                <option>Saudi Arabia (+966)</option>
+                                <option>Senegal (+221)</option>
+                                <option>Serbia (+381)</option>
+                                <option>Seychelles (+248)</option>
+                                <option>Sierra Leone (+232)</option>
+                                <option>Singapore (+65)</option>
+                                <option>Slovak Republic (+421)</option>
+                                <option>Slovenia (+386)</option>
+                                <option>Solomon Islands (+677)</option>
+                                <option>Somalia (+252)</option>
+                                <option>South Africa (+27)</option>
+                                <option>Spain (+34)</option>
+                                <option>Sri Lanka (+94)</option>
+                                <option>St. Helena (+290)</option>
+                                <option>St. Kitts (+1869)</option>
+                                <option>St. Lucia (+1758)</option>
+                                <option>Sudan (+249)</option>
+                                <option>Suriname (+597)</option>
+                                <option>Swaziland (+268)</option>
+                                <option>Sweden (+46)</option>
+                                <option>Switzerland (+41)</option>
+                                <option>Syria (+963)</option>
+                                <option>Taiwan (+886)</option>
+                                <option>Tajikstan (+7)</option>
+                                <option>Thailand (+66)</option>
+                                <option>Togo (+228)</option>
+                                <option>Tonga (+676)</option>
+                                <option>Trinidad & Tobago (+1868)</option>
+                                <option>Tunisia (+216)</option>
+                                <option>Turkey (+90)</option>
+                                <option>Turkmenistan (+7)</option>
+                                <option>Turkmenistan (+993)</option>
+                                <option>Turks & Caicos Islands (+1649)</option>
+                                <option>Tuvalu (+688)</option>
+                                <option>Uganda (+256)</option>
+                                <option>Ukraine (+380)</option>
+                                <option>United Arab Emirates (+971)</option>
+                                <option>Uruguay (+598)</option>
+                                <option>Uzbekistan (+7)</option>
+                                <option>Vanuatu (+678)</option>
+                                <option>Vatican City (+379)</option>
+                                <option>Venezuela (+58)</option>
+                                <option>Vietnam (+84)</option>
+                                <option>Virgin Islands - British (+1284)</option>
+                                <option>Virgin Islands - US (+1340)</option>
+                                <option>Wallis & Futuna (+681)</option>
+                                <option>Yemen (North)(+969)</option>
+                                <option>Yemen (South)(+967)</option>
+                                <option>Zambia (+260)</option>
+                                <option>Zimbabwe (+263)</option>
+                            </datalist>
+                            <label for="phone">Κινητό Τηλέφωνο</label>
+                            <input type="tel" id="phone" class="must" name="phone" placeholder="Enter your phone number"
+                            pattern="[0-9]{10}" required>
+                            <label for="phone2">Δεύτερο Τηλέφωνο</label>
+                            <input type="tel" id="phone2" name="phone2" placeholder="Phone Nummber"
+                            pattern="[0-9]{10}" autocomplete="off">
+                            <br><hr><h3>Στοιχεία Πληρωμής</h3><hr><br>
+                            <label for="cardname">Ονοματεπώνυμο Κατόχου Κάρτας</label>
+                            <input type="text" id="cardname" class="must" name="cardname" pattern="[A-Z]{2,} [A-Z]{2,}" placeholder="JOHN PAPADOPOULOS" required>
+                            <label for="cardnumber">Αριθμός Κάρτας</label>
+                            <input type="text" id="cardnumber" class="must" name="cardnumber" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="e.g. 1111-2222-3333-4444" required>
+                            <label for="exp">Ημερομηνία Λήξης</label>
+                            <input type="text" id="exp" class="must" name="exp" pattern="[0-1]{1}[1-9]{1}/[0-9]{2}" placeholder="ΜΜ/ΕΕ" required>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" class="must" name="cvv" pattern="[0-9]{3}" placeholder="e.g. 000" required>
+                            <label>Διεύθυνση Χρέωσης</label>
+                            <input type="text" id="city" name="city" placeholder="City" autocomplete="on">
+                            <input type="text" id="zip" name="zip_code" placeholder="Zip Code e.g. 00000" pattern="[0-9]{5}">
+                            <input type="text" id="street" name="street" placeholder="Street Name" autocomplete="on">
+                            <input type="text" id="streetNum" name="streetNum" placeholder="Street Number" autocomplete="on">
+                            <br><hr><h3>Στοιχεία Χρήστη</h3><hr><br>
+                            <label for="username">Όνομα Χρήστη</label>
+                            <input type="text" id="username" class="must" name="username" placeholder="Username" required>
+                            <details>
+                                <summary>Κωδικός Πρόσβασης</summary>
+                                <p>Ο κωδικός πρέπει να έχει τουλάχιστον 1 κεφαλαίο γράμμα, 1 μικρό, 1 αριθμό και 8 χαρακτήρες συνολικά.</p>
+                            </details>
+                            <div class="password-eye">
+                                <input type="password" id="password" class="must" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" autocomplete="off" required>
+                                <input type="image" src="./images/invisible.png" alt="eye" id="eye" onclick="passwordVisibility()">
+                            </div>
+                            <details>
+                                <summary>Επιβεβαίωση Κωδικού Πρόσβασης</summary>
+                                <p>Επιβεβαιώστε τον κωδικό που δώσατε παραπάνω.</p>
+                            </details>
+                            <input type="password" id="confirm-password" class="must" name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                autocomplete="off" required>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Ερωτηματολόγιο</legend>
+                        <div class="question">
+                            <label for="gender" id="label-gender">1. Ποιό είναι το φύλο σας;</label>
+                            <select name="gender" id="gender">
+                                <option value="null">Δεν θέλω να απαντήσω</option>
+                                <option value="man">Άνδρας</option>
+                                <option value="woman">Γυναίκα</option>
+                                <option value="other">Άλλο</option>
+                            </select><br>
+                            <label>2. Σε ποιά ηλικιακή ομάδα ανήκετε;</label>
+                            <div class="radio-horizontal">
+                                <label for="18-35"><input type="radio" id="18-35" name="recommed">18-35</label>
+                                <label for="36-50"><input type="radio" id="36-50" name="recommed">36-50</label>
+                                <label for="51-65"><input type="radio" id="51-65" name="recommed">51-65</label>
+                                <label for="66+"><input type="radio" id="66+" name="recommed">66+</label>
+                            </div><br>
+                            <label>3. Ποιό είναι το εκπαιδευτικό σας επίπεδο;</label>
+                            <label><input type="radio">Αναλφάβητος(η)</label>
+                            <label><input type="radio">Απόφοιτος(η) Δημοτικού</label>
+                            <label><input type="radio">Απόφοιτος(η) Γυμνασίου</label>
+                            <label><input type="radio">Απόφοιτος(η) Λυκείου</label>
+                            <label><input type="radio">Απόφοιτος(η) ΤΕΙ</label>
+                            <label><input type="radio">Απόφοιτος(η) ΑΕΙ</label><br>
+                            <label>4. Ποιά είναι η τωρινή επαγγελματική σας απασχόληση;</label>
+                            <label for="full"><input type="radio" id="full" name="recommed">Πλήρης</label>
+                            <label for="part"><input type="radio" id="part" name="recommed">Μερική</label>
+                            <label for="home"><input type="radio" id="home" name="recommed">Οικιακά</label>
+                            <label for="student"><input type="radio" id="student" name="recommed">Φοιτητής</label>
+                            <label for="unemployed"><input type="radio" id="unemployed" name="recommed">Άνεργος</label>
+                            <label for="retired"><input type="radio" id="retired" name="recommed">Σύνταξη</label><br>
+                            <label>5. Έχετε προηγούμενη εμπειρία με τη διαδικτυακή μάθηση;</label>
+                            <div class="radio-horizontal">
+                                <label for="y"><input type="radio" id="y" name="recommed">Ναι</label>
+                                <label for="n"><input type="radio" id="n" name="recommed">Όχι</label>
+                            </div><br>
+                            <label>6. Ποιές επιστήμες σας ενδιαφέρουν;</label>
+                            <label for="1"><input type="checkbox" id="1" name="inp">Θετικές Επιστήμες</label>
+                            <label for="2"><input type="checkbox" id="2" name="inp">Θεωρητικές Επιστήμες</label>
+                            <label for="3"><input type="checkbox" id="3" name="inp">Οικονομικές Επιστήμες</label><br>
+                            <label>7. Σε τί βαθμό το σχολείο χρησιμοποιεί διαδικτυακά μέσα;</label>
+                            <input type="range" list="tickmarks1" min="1" max="5" step="1">
+                            <datalist id="tickmarks1">
+                                <option value="1" label="1"></option>
+                                <option value="2"></option>
+                                <option value="3" label="3"></option>
+                                <option value="4"></option>
+                                <option value="5" label="5"></option>
+                            </datalist><br>
+                            <label>8. Πόσο σημαντική είναι η τεχνολογία στην εκπαίδευση;</label>
+                            <input type="range" list="tickmarks2" min="1" max="5" step="1">
+                            <datalist id="tickmarks2">
+                                <option value="1" label="1"></option>
+                                <option value="2"></option>
+                                <option value="3" label="3"></option>
+                                <option value="4"></option>
+                                <option value="5" label="5"></option>
+                            </datalist><br>
+                            <label>9. Για ποιό λόγο εγγράφεστε στην ιστοσελίδα μας;</label>
+                            <textarea maxlength="2000" minlength="0" id='info-field' rows="18" cols="40"></textarea><br>
+                            <label>10. Τί σας έκανε να επιλέξετε την ιστοσελίδα μας;</label>
+                            <label for="price"><input type="checkbox" id="price" name="inp">Τιμές</label>
+                            <label for="topics"><input type="checkbox" id="topics" name="inp">Γνωστικά αντικείμενα</label>
+                            <label for="other"><input type="checkbox" id="other" name="inp">Άλλο</label><br>
+                            <label>11. Από που μάθατε για την ιστοσελίδα μας;</label>
+                            <select name="ad" id="ad">
+                                <option value="ad">Διαφήμιση</option>
+                                <option value="friend">Γνωστό</option>
+                                <option value="other">Άλλο</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <button type="submit" value="submit">Submit</button>
+                </form>
+        	</article>
+        </main>
+        <aside id="bestsellers">
+            <h2>BESTSELLERS</h2>
+            <a href="./maths.html#math1"><img alt="aside-math" src="./images/math2.png"></a>
+            <a href="./programming.html#java"><img alt="java-aside" src="./images/java3.jpg"></a>
+            <a href="./programming.html#webdev"><img alt="webdev-aside" src="./images/webdev3.jpg"></a>
+        </aside>
+        <footer>
+            <p><strong>Επικοινωνία:</strong><br>
+            Χριστίνα Αιμιλία Φλασκή: <img alt="christina-git" class="footer-icon" src="./images/github.png"><a class="footer-link" href="https://github.com/christinaflaski">christinaflaski</a><br>
+            Όλγα Μαργέλη: <img class="footer-icon" alt="olga-git" src="./images/github.png"><a class="footer-link" href="https://github.com/lunnetta"> lunnetta</a><br><br>
+            © Copyright 2021. All rights reserved</p>
+        </footer> 
+        <script src="script.js"></script>
+    </body>
+</html>

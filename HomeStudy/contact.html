@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+        <link rel="shortcut icon" type="image/png" href="./images/Screenshot_2.png"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>HomeStudy</title>
+    </head>
+	<body>
+        <header><img id="logo" alt="logo" src="./images/output-onlinepngtools_1.png"></header>
+        <a href="#logo"><img id="back-to-top" alt="back-to-top" src="./images/top.jpg"></a>
+        <aside id="menu">
+            <nav>
+                <a href="./index.html">Αρχική</a>
+                <a href="./topics.html">Θεματικές Περιοχές</a>
+                <a href="./aboutUs.html">Ποιοι Είμαστε</a>
+                <a href="#">Επικοινωνία</a>
+                <a href="./signUp.html">Εγγραφή</a>
+            </nav>
+        </aside>
+        <main>
+            <article>
+                <h1>Επικοινωνία</h1>
+                <picture>
+                    <source media="(min-width:541px)" srcset="./images/contact_tablet.png">
+                    <img id="contact-image" src="./images/newcontact.png" alt="contactpic">
+                </picture><br>
+                <form id="contact-form" action="mailto:p3180195@aueb.gr" method="post" enctype="text/plain">
+                    <label for='name-field'>Όνομα:</label><br>
+                    <input type='text' id='name-field' minlength="2" maxlength="100" placeholder="Enter your name" required autofocus/><br>
+                    <label for='surname-field'>Επώνυμο:</label><br>
+                    <input type='text' id='surname-field' minlength="2" maxlength="100" placeholder="Enter your surname" required/><br>
+                    <label for='age'>Ηλικία:</label><br>
+                    <input type='number' id='age' min='18' max='100' placeholder='18' required/><br>
+                    <label for='topic'>Θέμα:</label><br>
+                    <select id="topic" name="list">
+                        <option disabled selected value>-- Διαλέξτε θέμα --</option>
+                        <option value="1">Πρόβλημα με την εγγραφή σε μάθημα</option>
+                        <option value="2">Ακύρωση συνδρομής σε μάθημα</option>
+                        <option value="3">Προβλήμα με συνδέση</option>
+                        <option value="4">Άλλο</option>
+                    </select><br>
+                    <label> Αν διαλέξατε άλλο:</label>
+                    <input type="text" name="other"/><br>
+                    <label for='email'>Email:</label><br>
+                    <input type='email' id='email' placeholder='example@mail.com' required/><br>
+                    <label for='info-field'>Σχόλια</label><br>
+                    <textarea maxlength="1000" minlength="0" id='info-field' required rows="10" cols="30"></textarea>
+                    <br>
+                    <button type="submit">Υποβολή</button>
+                </form>
+            </article>
+        </main>
+        <aside id="bestsellers">
+            <h2>BESTSELLERS</h2>
+            <a href="./maths.html#math1"><img alt="aside-math" src="./images/math2.png"></a>
+            <a href="./programming.html#java"><img alt="java-aside" src="./images/java3.jpg"></a>
+            <a href="./programming.html#webdev"><img alt="webdev-aside" src="./images/webdev3.jpg"></a>
+        </aside>
+        <footer>
+            <p><strong>Επικοινωνία:</strong><br>
+            Χριστίνα Αιμιλία Φλασκή: <img alt="christina-git" class="footer-icon" src="./images/github.png"><a class="footer-link" href="https://github.com/christinaflaski">christinaflaski</a><br>
+            Όλγα Μαργέλη: <img class="footer-icon" alt="olga-git" src="./images/github.png"><a class="footer-link" href="https://github.com/lunnetta"> lunnetta</a><br><br>
+            © Copyright 2021. All rights reserved</p>
+        </footer> 
+    </body>
+</html>
